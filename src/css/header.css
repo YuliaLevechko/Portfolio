@@ -108,7 +108,7 @@
 .mob-x-pic {
     width: 32px;
     height: 32px;
-    fill: var(--cream);
+    stroke: var(--bg-color);
 }
 
 .mob-x-btn:hover,
@@ -133,6 +133,7 @@
     text-transform: uppercase;
     padding: 5px 2px;
     color: var(--cream);
+    color: var(--bg-color);
 }
 
 .mob-item:hover,
@@ -150,7 +151,7 @@
 .appear {
     transform: translateY(-120%);
 }
-
+/* -------------------------MEDIA------------------------------- */
 @media screen and (min-width: 375px) {
     .container {
         width: 375px;

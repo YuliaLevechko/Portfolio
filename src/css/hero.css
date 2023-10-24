@@ -1,11 +1,12 @@
 .hero {
-    padding: 65px 0;
+    padding: 55px 0;
     background-color: var(--bg-color);
 }
 .hero-container {
     display: flex;
     padding: 0 15px;
     flex-direction: column;
+    gap: 10px;
 }
 .hero-text {
     display: flex;
@@ -23,7 +24,6 @@
 .greeting {
     font-size: 43px;
     line-height: 1.17;
-    font-weight: 700;
     color: var(--white);
     display: flex;
     justify-content: center;
@@ -33,7 +33,50 @@
     font-size: 20px;
     display: flex;
     justify-content: center;
+    margin-top: -10px;
 }
 .hero-img {
     border-radius: 50%;
+    border: 0.5px solid var(--light-accent);
+    box-shadow: 0px 0px 20px 2px #ffffff47;
+}
+.welcome-descr {
+    font-size: 13px;
+    line-height: 1.1;
+    border: 0.5px solid var(--light-accent);
+    padding: 10px 2px;
+}
+/* -------------------------MEDIA------------------------------- */
+@media screen and (min-width: 375px) {
+    
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    .hero {
+        padding: 75px 0;
+    }
+    .hero-container {
+        padding: 0 25px;
+        gap: 20px;
+    }
+    .top-part {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .hero-img {
+        width: 358px;
+    }
+    .welcome-descr {
+        width: 270px;
+        margin-left: -370px;
+        margin-top: -240px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
 }
