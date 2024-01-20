@@ -1,51 +1,55 @@
+section {
+    /* position: relative;
+        width: 100%;
+        background-image: url(../images/removebg-preview.png);
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat; */
+}
 .hero {
-    padding: 55px 0;
-    background-color: var(--bg-color);
+    padding: 15px 0;
 }
 .hero-container {
+    /* height: 500px; */
     display: flex;
     padding: 0 15px;
     flex-direction: column;
-    gap: 10px;
+    gap: 300px;
+    /* background-image: url(../images/hero-bg-min.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: top; */
+    /* background-size: 70%; 1280px */
+
+        /* position: relative;
+            width: 100%;
+            background-image: url(../images/removebg-preview.png);
+            background-size: cover;
+            background-position-y: bottom;
+            background-repeat: no-repeat; */
 }
+.top-part {
+}
+
 .hero-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.greeting-span {
-    font-size: 15px;
-    line-height: 1.1;
-    color: var(--color-text);
-    display: flex;
-    justify-content: center;
-}
-.greeting {
-    font-size: 43px;
-    line-height: 1.17;
-    color: var(--white);
-    display: flex;
-    justify-content: center;
-}
-.hero-descr {
-    color: var(--color-text);
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    margin-top: -10px;
-}
-.hero-img {
-    border-radius: 50%;
-    border: 0.5px solid var(--light-accent);
-    box-shadow: 0px 0px 20px 2px #ffffff47;
-}
-.welcome-descr {
-    font-size: 13px;
-    line-height: 1.1;
-    border: 0.5px solid var(--light-accent);
-    padding: 10px 2px;
-}
+
+.greeting-span {}
+
+.hero-descr {}
+
+.greeting {}
+
+.welcome-descr {}
 /* -------------------------MEDIA------------------------------- */
 @media screen and (min-width: 375px) {
     
@@ -54,26 +58,7 @@
     .container {
         width: 768px;
     }
-    .hero {
-        padding: 75px 0;
-    }
-    .hero-container {
-        padding: 0 25px;
-        gap: 20px;
-    }
-    .top-part {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-    .hero-img {
-        width: 358px;
-    }
-    .welcome-descr {
-        width: 270px;
-        margin-left: -370px;
-        margin-top: -240px;
-    }
+
 }
 @media screen and (min-width: 1280px) {
     .container {
